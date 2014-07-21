@@ -1,0 +1,10 @@
+$def with(a)
+<h4> <span class="label label-important abc-title">成语拼音</span>首字母索引：</h4>
+<ul class="abc-index">
+$for k in abcd:
+    $if k == a:
+        <li><a href="/idiom/$k/" title="首字母为 $k.upper() 的成语拼音" class="current">$k.upper()</a></li>
+    $else:
+        <li><a href="/idiom/$k/" title="首字母为 $k.upper() 的成语拼音">$k.upper()</a></li>
+</ul>
+<br class="clear" /><hr>

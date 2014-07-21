@@ -1,0 +1,21 @@
+$for key,r in radicals.items():
+    $if key == 1:
+        <h4><span class="label label-important abc-title">汉字的偏旁部首笔画为$key</span>索引：</h4>
+        <ul class="abc-index abc-m">
+        $for k,v in r.items():
+            <li><a href="/radical/$v/" title="偏旁部首为 $v 的汉字">$v</a></li>
+        </ul>
+        <br class="clear" />
+    $elif key > 1 and key < 10:
+        <h4><span class="label label-important abc-title">汉字的偏旁部首笔画为$key</span>索引：</h4>
+        <ul class="abc-index abc-m">
+        $for k,v in r.items():
+            <li><a href="/radical/$v/" title="偏旁部首为 $v 的汉字">$v</a></li>
+        </ul>
+        <br class="clear" />
+    $elif key >= 10:
+        $if key == 10:<h4><span class="label label-important abc-title">汉字的偏旁部首笔画>10</span>索引：</h4><ul class="abc-index abc-m">
+        $for k,v in r.items():
+            <li><a href="/radical/$v/" title="偏旁部首为 $v 的汉字">$v</a></li>
+</ul>
+<br class="clear" />

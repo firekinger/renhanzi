@@ -1,0 +1,7 @@
+$def with(words)
+
+<ul class="abc-index abc-s">
+$for w in words:
+	<li><a href="/word/$w.id/">$w.word</a></li>
+</ul>
+<br class="clear" />

@@ -1,0 +1,10 @@
+$def with(a, abc) 
+$if abc <> 'i':
+    $ option = pinyin[a].split(',')
+    <ul class="abc-index">
+    $for o in option:
+        $if tov(o) == abc:
+            <li><a href="/$tov(o)/" title="拼音为 $o 的汉字" class="current">$o</a></li>
+        $else:
+            <li><a href="/$tov(o)/" title="拼音为 $o 的汉字">$o</a></li>
+    </ul>

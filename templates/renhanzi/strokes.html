@@ -1,0 +1,30 @@
+$def with(strokes, hanzi)
+<!doctype html>
+<html dir="ltr" lang="zh-CN">
+  <head>
+    <title>笔画为 $strokes 的汉字 - 认汉字，学汉语，宏扬中华文化、致力于做最优秀的汉语推广网站。</title>
+$:render.renhanzi.header()
+  </head>
+  <body>
+    <div class="container-fluid">
+$:render.renhanzi.search()
+      <div class="row-fluid">
+        <div class="span3">
+          <!--Sidebar content-->
+$:render.renhanzi.abc('i')
+$:render.renhanzi.num(sstr(strokes))
+        </div>
+        <div class="span9">
+          <!--Body content-->
+          <h4>笔画为“ <span class="label label-important abc-title">$strokes</span> ”的汉字：</h4>
+<ul class="abc-index abc-m">
+$for hz in hanzi:
+    <li><a href="/$hz.hanzi/">$hz.hanzi</a></li>
+</ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+$:render.renhanzi.footer()
+  </body>
+</html>

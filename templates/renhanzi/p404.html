@@ -1,0 +1,18 @@
+$def with(key)
+<!Doctype html>
+<html dir="ltr" lang="zh-CN">
+<head>
+<title>认汉字，学汉语，宏扬中华文化、致力于做最优秀的汉语推广网站。</title>
+$:render.renhanzi.header()
+</head>
+<body style='margin:0 auto;'>
+<div class="container-fluid">
+$:render.renhanzi.search()
+<div class="row-fluid"><div class="span12">
+<h4>No results found for <span class="label label-important abc-title">$key</span>.</h4>
+<iframe scrolling='no' frameborder='0' src='http://yibo.iyiyun.com/js/yibo404/key/8292' width='640' height='464' style='display:block;'></iframe>
+</div></div>
+<hr>
+</div>
+$:render.renhanzi.footer()
+</body></html>

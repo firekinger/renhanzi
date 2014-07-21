@@ -1,0 +1,57 @@
+body {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    background-color: #eee7d5;
+}
+
+input.text-idiom {
+	font-size: 35px;
+	line-height: 40px;
+	width: 160px;
+	height: 40px;
+    color: #333;
+    background-color:#fad28c;
+    letter-spacing: 4px;
+
+}
+
+a.btn, button.btn {
+	margin-bottom: 10px;
+}
+
+button.btn-xlarge {
+  padding: 18px 25px;
+  font-size: 35px;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+}
+
+button.btn-primary.active {
+	background-color: #cc0000;
+}
+
+button.cls-idiom {
+	font-size: 20px;
+	line-height: 20px;
+	height: 50px;
+}
+
+a.list-idiom {
+	font-size: 20px;
+	line-height: 40px;
+	height: 40px;
+}
+
+
+/******/
+.clear {
+  	clear: both;
+}
+
+.current {
+ 	background-color: #ffffcc;
+ 	color: #f00;
+ 	font-weight: bolder;
+ 	border: 1px solid #cccccc;
+}
+

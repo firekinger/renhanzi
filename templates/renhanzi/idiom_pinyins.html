@@ -1,0 +1,11 @@
+$def with(a, abc) 
+
+$ option = pinyin[a].split(',')
+
+<ul class="abc-index">
+$for o in option:
+	$if o == abc:
+	    <li><a href="/idiom/$o/" title="拼音为 $o 的成语" class="current">$o</a></li>
+	$else:
+	    <li><a href="/idiom/$o/" title="拼音为 $o 的成语">$o</a></li>
+</ul>

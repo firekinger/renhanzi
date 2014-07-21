@@ -1,0 +1,186 @@
+body {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+.well {
+	padding: 10px 20px 0px 20px;
+}
+
+a.home {
+	padding: 4px 12px;
+	text-decoration: none;
+	color: #008000;
+	border: 1px solid #eef;
+
+}
+
+a.home:hover {
+	background-color: #ffffcc;
+ 	color: #f00;
+ 	border: 1px solid #cccccc;
+
+}
+
+.abc-title {
+	font-size: 18px;
+	line-height: 22px;
+}
+
+.hanzi {
+	margin: 5px;
+	width: 100px;
+	float: left;
+}
+
+.hanzi a{
+	text-decoration: none;
+	color: #000;
+
+}
+
+.hanzi-pinyin {
+	margin: 10px auto;
+	color: #008000;
+	text-align: center;
+	display: block;
+	font-size: 30px;
+}
+
+.hanzi-title {
+	margin: 0px;
+	padding: 0px 0px 0px 14px;
+	display: block;
+	font-size: 72px;
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	background: url(../img/renhanzi/bg_word.jpg) no-repeat;
+
+}
+
+ul.abc-index {
+	margin: 0px;
+	list-style: none;
+	font-family: Courier New;
+	line-height: 50px;
+
+}
+
+ul.abc-index li {
+  *display: inline;
+}
+
+ul.abc-index li a {
+	text-decoration: none;
+	display: inline-block;
+  	*display: inline;
+  	padding: 4px 12px;
+  	margin: 5px 5px 5px 5px;
+  	font-size: 30px;
+  	line-height: 20px;
+  	color: #008000;
+  	text-align: center;
+  	border: 1px dashed #cccccc;
+  	float: left;
+  
+}
+ul.abc-index li a:hover, a:focus{
+	background-color: #ffffcc;
+ 	color: #f00;
+ 	border: 1px solid #cccccc;
+  
+}
+
+ul.abc-m li a {
+  	font-size: 20px;
+}
+
+ul.abc-s li a {
+  	font-size: 14px;
+}
+
+
+ul.hanzi-index {
+	margin: 0px;
+	list-style: none;
+	line-height: 70px;
+
+}
+
+ul.hanzi-index li {
+  *display: inline;
+}
+
+ul.hanzi-index li a {
+	text-decoration: none;
+	display: inline-block;
+  	*display: inline;
+	_width: 60px;
+  	padding: 12px 12px;
+  	margin: 5px 5px 5px 5px;
+  	font-size: 30px;
+  	line-height: 20px;
+  	text-align: center;
+  	border: 1px dashed #cccccc;
+  	float: left;
+  
+}
+
+ul.hanzi-index li a:hover, a:focus{
+	background-color: #ffffcc;
+ 	color: #f00;
+ 	border: 1px solid #cccccc;
+  
+}
+
+.pinyin {
+	color: #008000;
+	display: block;
+	height: 35px;
+	line-height: 30px;
+}
+
+ul.word-index {
+	margin: 0px;
+	list-style: none;
+}
+
+
+ul.word-index li {
+	display: block;
+	margin: 5px;
+	width: 100px;
+  	float: left;
+}
+
+ul.word-index li a{
+	text-decoration: none;
+	color: #000;
+	border-width: 0px;
+}
+
+ul.word-index li a:hover, a:focus{
+ 	color: #f00;
+ 	border-width: 0px;
+}
+
+.copyright {
+	padding: 0px 30px;
+	height: 30px;
+	line-height: 30px;
+}
+
+
+
+/******/
+.clear {
+  	clear: both;
+}
+
+.current {
+ 	background-color: #ffffcc;
+ 	color: #f00;
+ 	font-weight: bolder;
+ 	border: 1px solid #cccccc;
+}
+

@@ -1,0 +1,28 @@
+$def with()
+<!doctype html>
+<html dir="ltr" lang="zh-CN">
+  <head>
+    <title>汉字按偏旁部首进行检索 - 认汉字，学汉语，宏扬中华文化、致力于做最优秀的汉语推广网站。</title>
+$:render.renhanzi.header()
+  </head>
+  <body>
+    <div class="container-fluid">
+$:render.renhanzi.search()
+      <div class="row-fluid">
+        <div class="span3">
+          <!--Sidebar content-->
+$:render.renhanzi.abc('i')
+$:render.renhanzi.num('40')
+        </div>
+        <div class="span9">部首是将汉字里共通可见的相同偏旁，拿来作为分类汉字的基准。所有汉字势必分类在某个部首中。部首的概念由东汉文字学家许慎于公元100年（永元12年）所著之《说文解字》所创，从此字书一般使用部首作为汉字的检字方式。<br>在汉语字典里有两种性质不同的部首：一种是文字学原则的部首，它严格依照六书体系，只有同一意符的字才可隶属同一部首。另一种是检字法原则的部首，它按字形结构，取其相同部位，作为查字依据，分部排列，其相同部位称部首。如“甥”，“舅”二字，《说文解字》根据六书体系，都归“男”部；《康熙字典》则依检字法原则，以“甥”入“生”部，“舅”入“臼”部。</div>
+
+        <div class="span9">
+          <!--Body content-->
+$:render.renhanzi.radicals()
+        </div>
+      </div>
+      <hr>
+    </div>
+$:render.renhanzi.footer()
+  </body>
+</html>

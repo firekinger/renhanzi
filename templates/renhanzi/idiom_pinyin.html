@@ -1,0 +1,32 @@
+$def with(abc, idioms)
+<!doctype html>
+<html dir="ltr" lang="zh-CN">
+  <head>
+    <title>拼音为 $abc 的汉字 - 认汉字，学汉语，宏扬中华文化、致力于做最优秀的汉语推广网站。</title>
+$:render.renhanzi.header()
+  </head>
+  <body>
+    <div class="container-fluid">
+$:render.renhanzi.search()
+      <div class="row-fluid">
+        <div class="span3">
+          <!--Sidebar content-->
+$:render.renhanzi.idiom_abc(abc[:1])
+        </div>
+        <div class="span9">
+          <!--Body content-->
+          <h4>首字母为“ <span class="label label-important abc-title">$abc[:1].upper()</span> ”的<strong>成语</strong>拼音索引：</h4>
+$:render.renhanzi.idiom_pinyins(abc[:1], abc)
+          <br class="clear" /><hr>
+          <h4>首字拼音为“ <span class="label label-important abc-title">$abc</span> ”的成语：</h4>
+<ul class="hanzi-index">
+$for ii in idioms:
+    <li><a href="/idiom/$ii.id/">$ii.idiom</a></li>
+</ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+$:render.renhanzi.footer()
+  </body>
+</html>

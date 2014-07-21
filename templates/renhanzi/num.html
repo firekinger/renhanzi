@@ -1,0 +1,10 @@
+$def with(a)
+<h4><span class="label label-important abc-title">汉字笔画数</span>索引：</h4>
+<ul class="abc-index">
+$for s in strokes:
+    $if s == a:
+        <li><a href="/strokes/$s/" title="笔画为 $s 的汉字" class="current">$s</a></li>
+    $else:
+        <li><a href="/strokes/$s/" title="笔画为 $s 的汉字">$s</a></li>
+</ul>
+<br class="clear" />
